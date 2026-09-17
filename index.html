@@ -8,36 +8,182 @@
     <title>Combox - Home</title>
 
     <link rel="icon" type="image/png" href="src/icons/my logo.png">
+
+    <style>
+        /* Configuración general */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: #87CEEB;
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Barra superior */
+        header {
+            background-color: #ffffff;
+            padding: 20px 50px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Logo / nombre */
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #2196F3;
+        }
+
+        /* Menú */
+        nav a {
+            color: #2196F3;
+            text-decoration: none;
+            font-weight: bold;
+            margin-left: 25px;
+        }
+
+        nav a:hover {
+            color: #1565C0;
+            text-decoration: underline;
+        }
+
+        /* Contenido principal */
+        main {
+            flex: 1;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            padding: 40px 20px;
+        }
+
+        /* Tarjeta */
+        .welcome-card {
+            background-color: #ffffff;
+
+            width: 90%;
+            max-width: 650px;
+
+            padding: 50px 40px;
+
+            text-align: center;
+
+            border-radius: 20px;
+
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .welcome-card h1 {
+            color: #1565C0;
+            margin-bottom: 15px;
+        }
+
+        .welcome-card p {
+            color: #555555;
+            font-size: 17px;
+            line-height: 1.6;
+        }
+
+        /* Botones */
+        .buttons {
+            margin-top: 30px;
+        }
+
+        .button {
+            display: inline-block;
+
+            background-color: #2196F3;
+            color: #ffffff;
+
+            padding: 12px 25px;
+
+            margin: 8px;
+
+            border-radius: 8px;
+
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background-color: #1565C0;
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: #ffffff;
+            text-align: center;
+            padding: 15px;
+
+            color: #666666;
+
+            box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.10);
+        }
+    </style>
+
 </head>
 
 <body>
 
+    <!-- Barra de navegación -->
     <header>
 
-        <h1>Welcome to Combox</h1>
+        <div class="logo">
+            COMBOX
+        </div>
 
         <nav>
-            <a href="src/signup.html">Sign Up</a> |
+            <a href="src/signup.html">Sign Up</a>
             <a href="src/signin.html">Sign In</a>
         </nav>
 
     </header>
 
+
+    <!-- Contenido principal -->
     <main>
 
-        <h2>Welcome to Combox</h2>
+        <section class="welcome-card">
 
-        <p>
-            Connect with Combox and enjoy our platform.
-        </p>
+            <h1>Welcome to Combox</h1>
 
-        <p>
-            If you already have an account, sign in.
-            If you are a new user, create an account.
-        </p>
+            <p>
+                Welcome to Combox, your communication platform.
+            </p>
+
+            <p>
+                Create an account or sign in to continue.
+            </p>
+
+            <div class="buttons">
+
+                <a class="button" href="src/signup.html">
+                    Sign Up
+                </a>
+
+                <a class="button" href="src/signin.html">
+                    Sign In
+                </a>
+
+            </div>
+
+        </section>
 
     </main>
 
+
+    <!-- Pie de página -->
     <footer>
 
         <p>&copy; 2026 Combox</p>
