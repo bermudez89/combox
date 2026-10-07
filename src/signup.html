@@ -1,36 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Combox | Sign Up</title>
+    <title>Combox | Crear cuenta</title>
 
     <link rel="icon" type="image/png" href="icons/my logo.png">
+
+    <style>
+        body {
+            background-color: #dff3ff;
+            font-family: Arial;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        h1 {
+            color: #247ba0;
+        }
+
+        input {
+            padding: 8px;
+            margin: 8px;
+        }
+
+        button {
+            padding: 8px 20px;
+            background-color: #247ba0;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        a {
+            color: #247ba0;
+        }
+    </style>
 </head>
 
 <body>
 
-    <!-- Create registration -->
-    <h3>Register new Combox user</h3>
+    <h1>Crear cuenta</h1>
 
-    <label for="firstname">Firstname:</label><br>
-    <input type="text" id="firstname" name="firstname"><br>
+    <form action="signup.php" method="post">
 
-    <label for="lastname">Lastname:</label><br>
-    <input type="text" id="lastname" name="lastname"><br>
+        <label>Nombre:</label><br>
+        <input type="text" name="fname" required><br>
 
-    <label for="mobile">Mobile Number:</label><br>
-    <input type="tel" id="mobile" name="mobile"><br>
+        <label>Apellido:</label><br>
+        <input type="text" name="lname" required><br>
 
-    <label for="email">Email:</label><br>
-    <input type="email" id="email" name="email"><br>
+        <label>Número de celular:</label><br>
+        <input type="tel" name="mphone" required><br>
 
-    <label for="password">Password:</label><br>
-    <input type="password" id="password" name="password"><br><br>
+        <label>Correo:</label><br>
+        <input type="email" name="email" required><br>
 
-    <button type="button">Register</button>
+        <label>Contraseña:</label><br>
+        <input type="password" name="pswd" required><br>
+
+        <button type="submit">Registrarse</button>
+
+    </form>
+
+    <p>
+        ¿Ya tienes una cuenta?
+        <a href="signin.html">Iniciar sesión</a>
+    </p>
 
 </body>
 

@@ -1,41 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Combox | Sign In</title>
+    <title>Combox | Iniciar sesión</title>
 
     <link rel="icon" type="image/png" href="icons/my logo.png">
+
+    <style>
+        body {
+            background-color: #dff3ff;
+            font-family: Arial;
+            text-align: center;
+            padding-top: 70px;
+        }
+
+        h1 {
+            color: #247ba0;
+        }
+
+        input {
+            padding: 8px;
+            margin: 8px;
+        }
+
+        button {
+            padding: 8px 20px;
+            background-color: #247ba0;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        a {
+            color: #247ba0;
+        }
+    </style>
 </head>
 
 <body>
 
-    <!-- Login form -->
-    <h1>Login</h1>
+    <h1>Iniciar sesión</h1>
 
-    <label for="email">Email:</label><br>
-    <input type="email" id="email" name="email" required><br>
+    <form action="signin.php" method="post">
 
-    <label for="password">Password:</label><br>
-    <input type="password" id="password" name="password" required><br>
+        <label>Correo:</label><br>
+        <input type="email" name="email" required><br>
 
-    <a href="forgot-password.html">I forgot my password</a><br><br>
+        <label>Contraseña:</label><br>
+        <input type="password" name="pswd" required><br>
 
-    <button type="submit">Login</button>
+        <button type="submit">Ingresar</button>
 
-    <br><br>
+    </form>
 
-    <p>or</p>
+    <p>
+        <a href="forgot-password.html">¿Olvidaste tu contraseña?</a>
+    </p>
 
-    <button type="button">Login with Google</button><br>
-
-    <button type="button">Login with Facebook</button>
-
-    <br><br>
-
-    <a href="signup.html">Register</a>
+    <p>
+        ¿No tienes una cuenta?
+        <a href="signup.html">Crear cuenta</a>
+    </p>
 
 </body>
 
