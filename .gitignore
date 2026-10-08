@@ -382,5 +382,6 @@ pyrightconfig.json
 # End of https://www.toptal.com/developers/gitignore/api/python
 
 # Archivos de conexion local
+database.php
 config/database.php
 
