@@ -32,17 +32,17 @@
     // ---------- PART A: Update user data ----------
 
     $sql = 'UPDATE users
-            SET firstname = $1,
-                lastname = $2,
-                email = $3,
-                mobile_phone = $4
-            WHERE id = $5';
+        SET firstname = $1,
+            lastname = $2,
+            email = $3,
+            mobile_phone = $4
+        WHERE id = $5';
 
-    $result = pg_query_params(
-        $local_conn,
-        $sql,
-        array($firstname, $lastname, $email, $mobile_phone, $id)
-    );
+$result = pg_query_params(
+    $local_conn,
+    $sql,
+    array($firstname, $lastname, $email, $mobile_phone, $id)
+);
 
     if (!$result) {
         echo "Error al actualizar los datos";

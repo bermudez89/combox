@@ -52,6 +52,8 @@
         <input type="text" name="mobile_phone"
                value="<?php echo htmlspecialchars($user['mobile_phone']); ?>"
                required><br><br>
+               <label>Estado del usuario</label><br>
+
 
         <?php if ($user['photo_url'] != "") { ?>
 
